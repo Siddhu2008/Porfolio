@@ -1,0 +1,136 @@
+/* General Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 17, 32, 0.95);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: cyan;
+}
+
+/* Desktop Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 15px;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: cyan;
+}
+
+.nav-links a.active {
+  color: cyan;
+  border-bottom: 2px solid cyan;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: cyan;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hamburger animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu {
+  background: rgba(11, 17, 32, 0.97);
+  backdrop-filter: blur(8px);
+  padding: 20px 30px;
+  border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.mobile-menu li {
+  list-style: none;
+  margin: 14px 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 17px;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: cyan;
+}
+
+.mobile-menu a.active {
+  color: cyan;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

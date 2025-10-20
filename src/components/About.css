@@ -1,0 +1,102 @@
+.about-section {
+  padding: 100px 20px;
+  background: #0b1120;
+  color: #e2e8f0;
+  text-align: center;
+  position: relative;
+}
+
+.about-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: cyan;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: cyan;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+.about-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 22px;
+}
+
+.highlight {
+  color: cyan;
+  font-weight: 500;
+}
+
+.about-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: 2px solid cyan;
+}
+
+.btn.github {
+  color: cyan;
+  background: transparent;
+}
+
+.btn.github:hover {
+  background: cyan;
+  color: #0b1120;
+}
+
+.btn.resume {
+  color: #0b1120;
+  background: cyan;
+}
+
+.btn.resume:hover {
+  background: transparent;
+  color: cyan;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 15px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-links {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

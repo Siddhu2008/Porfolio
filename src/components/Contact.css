@@ -1,0 +1,79 @@
+.contact-section {
+  background: #0b1120; /* Dark luxury background */
+  color: #e2e8f0;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111827; /* Slightly lighter dark card */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: cyan;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact-underline {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: cyan;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0b1120;
+  background: cyan;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.contact-btn:hover {
+  background: #00bcd4; /* Slightly darker cyan on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 15px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
