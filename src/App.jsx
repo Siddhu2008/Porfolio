@@ -5,6 +5,8 @@ import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 
+import Certificates from "./components/Certificates.jsx";
+
 export default function App() {
   return (
     <>
@@ -13,6 +15,7 @@ export default function App() {
       <About />
       <Projects />
       <Skills />
+      <Certificates />
       <Contact />
     </>
   );
